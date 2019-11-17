@@ -4,44 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styleone.css">
 </head>
 
 <body>
 
   <header id="masthead">
     <div class="container">
-      <a href="index.html" id="logo">David Walters</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+              <a href="index.html" id="logo">David Walters</a>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
     </div>
   </header>
 
   <div id="main-container" class="container">
     <section class="main-section">
+
+      <div class="row">
+        <div class="col-4">
+
       <h1>Contact</h1>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+        </div>
 
+        <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
     </section>
 
   </div>
